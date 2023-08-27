@@ -1,0 +1,108 @@
+body {
+    background-image: linear-gradient(to right, #68EACC , #497BE8);
+    font-family: "Franklin Gothic Book", serif;
+}
+
+#Container {
+    background: #fff;
+    width: 30%;
+    height: auto;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+#Title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#Input\ field {
+    margin: 5% auto;
+}
+
+#input {
+    width: 85%;
+    height: 40px;
+    padding-left: 2%;
+    font-size: larger;
+    outline: none;
+    border: 2px solid #ccc;
+    font-family: "Franklin Gothic Book", serif;
+}
+
+#add {
+    width: 10%;
+    height: 45px;
+    padding-right: 2%;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#input:focus{
+    border-color: #8E49E8;
+}
+
+#Footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pendingTasks {
+    font-family: "Franklin Gothic Book", serif;
+    font-size: larger;
+}
+
+#clear {
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #8E49E8;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    font-family: "Franklin Gothic Book", serif;
+}
+
+.todoList{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.todoList li{
+    position: relative;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+.todoList li .icon{
+    position: absolute;
+    right: -45px;
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.todoList li:hover .icon{
+    right: 0;
+}
